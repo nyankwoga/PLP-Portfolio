@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Add a background color for better visibility */
+}
+
+
+nav {
+    background-color: white;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: whitesmoke;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: black;
+    text-decoration: none;
+}
+
+.content {
+    display: flex; /* Add flex display */
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    margin-left: 200px; /* Adjust based on the width of the sidebar */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-right: 20px; /* Add margin to the right for spacing */
+}
+
+img {
+    width: 100%;
+    max-width: 300px; /* Adjust the max-width as needed */
+    border-radius: 10px;
+    align-items: center;
+}
+
+section button {
+    background-color: pink;
+    color: blue;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section button:hover {
+    background-color: lightpink;
+}
+
+section#about {
+    background-color: rgb(228, 221, 222);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px; /* Add margin at the top for spacing */   
+    text-align: center;
+}
+h3 {
+    font-size: 1em;
+    margin-right: 50px; 
+}
+/* Add more styles as needed */
+.p {
+    font-size: 1em;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#services {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading h5 {
+    font-size: 18px;
+    color: #8a8a8a;
+    margin-bottom: 10px;
+}
+
+.heading h2 {
+    font-size: 36px;
+    position: relative;
+    color: #333;
+}
+
+.heading-boarder {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-lg-4, .col-md-4, .col-12 {
+    flex: 0 0 30%; /* Adjust the width of each card as needed */
+    margin-bottom: 30px;
+}
+
+.experience {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.experience h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.experience p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.ex-left {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .col-lg-4, .col-md-4, .col-12 {
+        flex: 0 0 100%;
+    }
+}
+
+
+#experience {
+    background-color: rgb(228, 221, 222);
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading h5 {
+    font-size: 18px;
+    color: #8a8a8a;
+    margin-bottom: 10px;
+}
+
+.heading h2 {
+    font-size: 36px;
+    position: relative;
+    color: #333;
+}
+
+.heading-boarder {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-lg-4, .col-md-4, .col-12 {
+    flex: 0 0 32%;
+    margin-bottom: 30px;
+}
+
+.experience {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.experience h5 {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.experience h4 {
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+}
+
+.ex-left {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .col-lg-4, .col-md-4, .col-12 {
+        flex: 0 0 100%;
+    }
+}
+
+footer {
+    background-color: rgba(214, 193, 193, 0.7); /* Semi-transparent background for better readability */
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color:black
+}
