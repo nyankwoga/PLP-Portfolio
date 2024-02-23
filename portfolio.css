@@ -101,12 +101,10 @@ section button:hover {
 
 section#about {
     background-color: rgb(228, 221, 222);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;   
+    padding: 20px;         
     text-align: center;
     padding-left: 40rem;
-    padding-right: 40rem;
+    padding-right: 30rem;
 }
 h3 {
     font-size: 1em;
