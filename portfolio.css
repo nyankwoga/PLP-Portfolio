@@ -2,63 +2,85 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white; /* Add a background color for better visibility */
-}
-
-
-nav {
     background-color: white;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
+    position: relative; 
 }
 
-nav a {
+.header {
+    background-color: #f1f1f1; 
+    padding: 10px 0; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;    
+}
+
+.header header {
+    display: flex;   
+    align-items: center;   
+}
+
+.header nav {
+    display: flex;    
+}
+
+.header nav a {     
     padding: 10px 20px;
     text-decoration: none;
-    color: black;
+    color: blue;
     margin: 0 10px;
     font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    background-color: whitesmoke;
+    transition: 0.3s;    
 }
 
 .social-icons {
     list-style: none;
+    margin: 0;
     padding: 0;
-    margin-top: 20px;
+    display: flex;
 }
 
 .social-icons li {
-    display: inline-block;
-    margin-right: 10px;
+    margin-right: 30px; 
 }
 
 .social-icons a {
-    color: black;
     text-decoration: none;
+    color: #050505; 
 }
 
-.content {
-    display: flex; /* Add flex display */
-    flex-direction: column;
-    align-items: center; /* Center items vertically */
-    margin-left: 200px; /* Adjust based on the width of the sidebar */
-    padding: 20px;
-    text-align: center;
+#home .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 190px;
+    padding-bottom: 20rem;
 }
 
-h1 {
-    font-size: 3em;
-    margin-right: 20px; /* Add margin to the right for spacing */
+#home .home-container .img {
+    flex: 1;
 }
 
+#home .home-container .img img {
+    width: 100%;
+}
+
+#home .home-container .text-content {
+    flex: 1;
+    margin-left: 10px; 
+    padding-left: 10px; 
+    
+}
+
+.img {
+    margin-top: 20px; 
+    text-align: center; 
+}
 img {
     width: 100%;
-    max-width: 300px; /* Adjust the max-width as needed */
+    max-width: 300px; 
     border-radius: 10px;
     align-items: center;
 }
@@ -81,21 +103,23 @@ section#about {
     background-color: rgb(228, 221, 222);
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px; /* Add margin at the top for spacing */   
+    margin-top: 20px;   
     text-align: center;
+    padding-left: 40rem;
+    padding-right: 40rem;
 }
 h3 {
     font-size: 1em;
     margin-right: 50px; 
 }
-/* Add more styles as needed */
+
 .p {
-    font-size: 1em;
-    margin-right: 20px;
-    text-align: center;
+    font-size: 2em;
+    margin-right: 50px;
+    text-align: center;   
 }
 
-#services {
+#projects {
     background-color: #f9f9f9;
     padding: 60px 0;
 }
@@ -139,24 +163,24 @@ h3 {
 }
 
 .col-lg-4, .col-md-4, .col-12 {
-    flex: 0 0 30%; /* Adjust the width of each card as needed */
+    flex: 0 0 30%; 
     margin-bottom: 30px;
 }
 
-.experience {
+.project {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
-.experience h3 {
+.project h3 {
     color: #333;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.experience p {
+.project p {
     color: #666;
     font-size: 14px;
     margin-bottom: 0;
@@ -172,10 +196,10 @@ h3 {
     }
 }
 
-
 #experience {
     background-color: rgb(228, 221, 222);
     padding: 60px 0;
+    padding-bottom: 380px;
 }
 
 .container {
@@ -251,7 +275,7 @@ h3 {
 }
 
 footer {
-    background-color: rgba(214, 193, 193, 0.7); /* Semi-transparent background for better readability */
+    background-color: rgba(214, 193, 193, 0.7);
     text-align: center;
     padding: 1em;
     position: fixed;
